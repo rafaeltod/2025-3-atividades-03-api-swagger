@@ -55,108 +55,108 @@ A API possui os seguintes endpoints:
 ## ✅ Atividades (Checklist)
 
 ### 1️⃣ Preparação do Ambiente
-- [ ] **Fazer fork deste repositório** para sua conta do GitHub
-- [ ] Clonar o fork para sua máquina local
-- [ ] Instalar as dependências com `npm install`
-- [ ] Verificar se o projeto está funcionando com `npm run start:dev`
-- [ ] Acessar a API em `http://localhost:3000` e verificar o endpoint raiz
+- [x] **Fazer fork deste repositório** para sua conta do GitHub
+- [x] Clonar o fork para sua máquina local
+- [x] Instalar as dependências com `npm install`
+- [x] Verificar se o projeto está funcionando com `npm run start:dev`
+- [x] Acessar a API em `http://localhost:3000` e verificar o endpoint raiz
 
 ### 2️⃣ Configuração do Swagger
-- [ ] Abrir o arquivo `src/main.ts`
-- [ ] Importar os módulos necessários do `@nestjs/swagger`:
+- [x] Abrir o arquivo `src/main.ts`
+- [x] Importar os módulos necessários do `@nestjs/swagger`:
   - `SwaggerModule`
   - `DocumentBuilder`
-- [ ] Criar a configuração do Swagger usando `DocumentBuilder`:
+- [x] Criar a configuração do Swagger usando `DocumentBuilder`:
   - Definir título: "API de Tarefas (TODO List)"
   - Definir descrição: "API para gerenciamento de tarefas da turma Infoweb 2025"
   - Definir versão: "1.0"
   - Adicionar tag: "tasks"
-- [ ] Criar o documento Swagger com `SwaggerModule.createDocument()`
-- [ ] Configurar a rota de acesso ao Swagger UI (sugestão: `/api-docs`)
-- [ ] Testar o acesso ao Swagger UI em `http://localhost:3000/api-docs`
-- [ ] Guardar as modificações com `git commit -m "configurado o ambiente swagger"`
+- [x] Criar o documento Swagger com `SwaggerModule.createDocument()`
+- [x] Configurar a rota de acesso ao Swagger UI (sugestão: `/api-docs`)
+- [x] Testar o acesso ao Swagger UI em `http://localhost:3000/api-docs`
+- [x] Guardar as modificações com `git commit -m "configurado o ambiente swagger"`
 
 ### 3️⃣ Documentação da Entidade Task
-- [ ] Abrir o arquivo `src/tasks/task.entity.ts`
-- [ ] Importar o decorator `@ApiProperty` do `@nestjs/swagger`
-- [ ] Adicionar `@ApiProperty()` para o campo `id`:
+- [x] Abrir o arquivo `src/tasks/task.entity.ts`
+- [x] Importar o decorator `@ApiProperty` do `@nestjs/swagger`
+- [x] Adicionar `@ApiProperty()` para o campo `id`:
   - Exemplo: description, type, etc.
-- [ ] Adicionar `@ApiProperty()` para o campo `title`:
+- [x] Adicionar `@ApiProperty()` para o campo `title`:
   - Adicionar description, example
-- [ ] Adicionar `@ApiProperty()` para o campo `description`:
+- [x] Adicionar `@ApiProperty()` para o campo `description`:
   - Adicionar description, example
-- [ ] Adicionar `@ApiProperty()` para o campo `status`:
+- [x] Adicionar `@ApiProperty()` para o campo `status`:
   - Adicionar enum, description, default, example
-- [ ] Adicionar `@ApiProperty()` para o campo `createdAt`:
+- [x] Adicionar `@ApiProperty()` para o campo `createdAt`:
   - Adicionar description, type
-- [ ] Adicionar `@ApiProperty()` para o campo `updatedAt`:
+- [x] Adicionar `@ApiProperty()` para o campo `updatedAt`:
   - Adicionar description, type
-- [ ] Verificar a documentação da entidade no Swagger UI
-- [ ] Guardar as modificações com `git commit -m "documentado as entidades"`
+- [x] Verificar a documentação da entidade no Swagger UI
+- [x] Guardar as modificações com `git commit -m "documentado as entidades"`
 
 ### 4️⃣ Documentação do CreateTaskDto
-- [ ] Abrir o arquivo `src/tasks/dto/create-task.dto.ts`
-- [ ] Importar o decorator `@ApiProperty` do `@nestjs/swagger`
-- [ ] Adicionar `@ApiProperty()` para o campo `title`:
+- [x] Abrir o arquivo `src/tasks/dto/create-task.dto.ts`
+- [x] Importar o decorator `@ApiProperty` do `@nestjs/swagger`
+- [x] Adicionar `@ApiProperty()` para o campo `title`:
   - Adicionar description, example, minLength, maxLength
-- [ ] Adicionar `@ApiProperty()` para o campo `description`:
+- [x] Adicionar `@ApiProperty()` para o campo `description`:
   - Adicionar description, example
-- [ ] Adicionar `@ApiPropertyOptional()` para o campo `status`:
+- [x] Adicionar `@ApiPropertyOptional()` para o campo `status`:
   - Adicionar enum, description, default, example
   - Usar `@ApiPropertyOptional` pois o campo é opcional
-- [ ] Verificar a documentação do DTO no Swagger UI (schema CreateTaskDto)
+- [x] Verificar a documentação do DTO no Swagger UI (schema CreateTaskDto)
 
 ### 5️⃣ Documentação do UpdateTaskDto
-- [ ] Abrir o arquivo `src/tasks/dto/update-task.dto.ts`
-- [ ] Importar `@ApiPropertyOptional` do `@nestjs/swagger`
-- [ ] Adicionar `@ApiPropertyOptional()` para o campo `title`:
+- [x] Abrir o arquivo `src/tasks/dto/update-task.dto.ts`
+- [x] Importar `@ApiPropertyOptional` do `@nestjs/swagger`
+- [x] Adicionar `@ApiPropertyOptional()` para o campo `title`:
   - Adicionar description, example
-- [ ] Adicionar `@ApiPropertyOptional()` para o campo `description`:
+- [x] Adicionar `@ApiPropertyOptional()` para o campo `description`:
   - Adicionar description, example
-- [ ] Adicionar `@ApiPropertyOptional()` para o campo `status`:
+- [x] Adicionar `@ApiPropertyOptional()` para o campo `status`:
   - Adicionar enum, description, example
-- [ ] Verificar a documentação do DTO no Swagger UI (schema UpdateTaskDto)
-- [ ] Guardar as modificações com `git commit -m "documentado os DTOs"`
+- [x] Verificar a documentação do DTO no Swagger UI (schema UpdateTaskDto)
+- [x] Guardar as modificações com `git commit -m "documentado os DTOs"`
 
 ### 6️⃣ Documentação do Endpoint Raiz
-- [ ] Abrir o arquivo `src/app.controller.ts`
-- [ ] Importar decorators do `@nestjs/swagger`:
+- [x] Abrir o arquivo `src/app.controller.ts`
+- [x] Importar decorators do `@nestjs/swagger`:
   - `@ApiTags`
   - `@ApiOperation`
   - `@ApiResponse`
-- [ ] Adicionar `@ApiTags('root')` no controller
-- [ ] Documentar o endpoint `GET /`:
+- [x] Adicionar `@ApiTags('root')` no controller
+- [x] Documentar o endpoint `GET /`:
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiResponse()` para status 200 com description
-- [ ] Guardar as modificações com `git commit -m "documentado o endpoint raiz"`
+- [x] Guardar as modificações com `git commit -m "documentado o endpoint raiz"`
 
 ### 7️⃣ Documentação dos Endpoints de Tarefas - Listar Todas
-- [ ] Abrir o arquivo `src/tasks/tasks.controller.ts`
-- [ ] Importar decorators do `@nestjs/swagger`:
+- [x] Abrir o arquivo `src/tasks/tasks.controller.ts`
+- [x] Importar decorators do `@nestjs/swagger`:
   - `@ApiTags`
   - `@ApiOperation`
   - `@ApiResponse`
-- [ ] Adicionar `@ApiTags('tasks')` no controller
-- [ ] Documentar o endpoint `GET /tasks` (método `findAll`):
+- [x] Adicionar `@ApiTags('tasks')` no controller
+- [x] Documentar o endpoint `GET /tasks` (método `findAll`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiResponse()` para status 200 com description e type
 
 ### 8️⃣ Documentação dos Endpoints de Tarefas - Buscar por ID
-- [ ] Documentar o endpoint `GET /tasks/:id` (método `findOne`):
+- [x] Documentar o endpoint `GET /tasks/:id` (método `findOne`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiParam()` para o parâmetro `id`
   - Adicionar `@ApiResponse()` para status 200 com description e type
   - Adicionar `@ApiResponse()` para status 404 com description
 
 ### 9️⃣ Documentação dos Endpoints de Tarefas - Criar
-- [ ] Documentar o endpoint `POST /tasks` (método `create`):
+- [x] Documentar o endpoint `POST /tasks` (método `create`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiBody()` com type CreateTaskDto
   - Adicionar `@ApiResponse()` para status 201 com description e type
   - Adicionar `@ApiResponse()` para status 400 com description
 
 ### 🔟 Documentação dos Endpoints de Tarefas - Atualizar
-- [ ] Documentar o endpoint `PUT /tasks/:id` (método `update`):
+- [x] Documentar o endpoint `PUT /tasks/:id` (método `update`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiParam()` para o parâmetro `id`
   - Adicionar `@ApiBody()` com type UpdateTaskDto
@@ -165,32 +165,32 @@ A API possui os seguintes endpoints:
   - Adicionar `@ApiResponse()` para status 400 com description
 
 ### 1️⃣1️⃣ Documentação dos Endpoints de Tarefas - Deletar
-- [ ] Documentar o endpoint `DELETE /tasks/:id` (método `remove`):
+- [x] Documentar o endpoint `DELETE /tasks/:id` (método `remove`):
   - Adicionar `@ApiOperation()` com summary e description
   - Adicionar `@ApiParam()` para o parâmetro `id`
   - Adicionar `@ApiResponse()` para status 204 com description
   - Adicionar `@ApiResponse()` para status 404 com description
-- [ ] Guardar as modificações com `git commit -m "documentado o endpoint de tarefas(\tasks)"`
+- [x] Guardar as modificações com `git commit -m "documentado o endpoint de tarefas(\tasks)"`
 
 ### 1️⃣2️⃣ Testes e Validação Final
-- [ ] Executar `npm run start:dev` e acessar o Swagger UI
-- [ ] Verificar se todos os endpoints estão documentados
-- [ ] Verificar se todos os schemas (DTOs e entidades) estão documentados
-- [ ] Testar cada endpoint através do Swagger UI:
+- [x] Executar `npm run start:dev` e acessar o Swagger UI
+- [x] Verificar se todos os endpoints estão documentados
+- [x] Verificar se todos os schemas (DTOs e entidades) estão documentados
+- [x] Testar cada endpoint através do Swagger UI:
   - Testar GET / (endpoint raiz)
   - Testar POST /tasks (criar tarefa)
   - Testar GET /tasks (listar todas)
   - Testar GET /tasks/:id (buscar por ID)
   - Testar PUT /tasks/:id (atualizar tarefa)
   - Testar DELETE /tasks/:id (deletar tarefa)
-- [ ] Verificar se as descrições estão claras e os exemplos são adequados
-- [ ] Executar os testes com `npm test` para garantir que nada quebrou
-- [ ] Fazer commit das alterações
-- [ ] Fazer push para o repositório fork
-- [ ] Criar um Pull Request (opcional, para revisão)
+- [x] Verificar se as descrições estão claras e os exemplos são adequados
+- [x] Executar os testes com `npm test` para garantir que nada quebrou
+- [x] Fazer commit das alterações
+- [x] Fazer push para o repositório fork
+- [x] Criar um Pull Request (opcional, para revisão)
 
 
-- [ ] Publicar modificações no repositório com `git push`
+- [x] Publicar modificações no repositório com `git push`
 
 ## 📖 Recursos Úteis
 
